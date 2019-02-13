@@ -23,7 +23,7 @@ function displayDogs(happy){
 }
  function failureCallback(unhappy) {
     console.log(unhappy.message);
-    $('.dogResults').append(`We are sorry but your breed doesn't exsist in our image base. ${unhappy.message} Error`)
+    $('.dogResults').append(`Uo oh!  Where are all the puppies!?<br>Please check your spelling.<br>If it is correct then the breed doesn't exsist in our image base.<br>${unhappy.message} Error`)
     $('.dogResults').removeClass('hidden');
  }
 
