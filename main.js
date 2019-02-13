@@ -22,7 +22,7 @@ function displayDogs(happy){
     $('.dogResults').removeClass('hidden');
 }
  function failureCallback(unhappy) {
-    console.log(unhappy.message);
+    console.log(`Error from API: ${unhappy.message} code`);
     $('.dogResults').append(`Uo oh!  Where are all the puppies!?<br>Please check your spelling.<br>If it is correct then the breed doesn't exsist in our image base.<br>${unhappy.message} Error`)
     $('.dogResults').removeClass('hidden');
  }
