@@ -31,7 +31,8 @@ function dogSearch(){
     $('form').submit(event => {
         event.preventDefault();
         $('.dogResults').empty();
-        let breedOfDog = document.getElementById("breedOfDog").value;
+        let str = document.getElementById("breedOfDog").value;
+        let breedOfDog = str.toLowerCase();
         getDogImages(breedOfDog);
     });
 }
