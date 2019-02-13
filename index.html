@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dog API Assignment</title>
+        <meta name="viewpoet" content="width=decive-width">
+        <meta name="description" content="Bloc 9.4 Assignment">
+        <meta name="keywords" content="dog, api, bloc">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Find a photo of a specific dog breed<br><i>(only returns one photo)</i></h1>
+        </header>
+        <main role="main">
+            <section class="userInput">
+                <form>
+                    <fieldset>
+                        <legend><h2>Enter a breed of dog</h2></legend>
+                        <input id="breedOfDog" type="text" placeholder="enter the breed of dog you want to see" required>
+                        <button type="submit" value="Find Dogs">Find Dogs</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="dogResults hidden"></section>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
