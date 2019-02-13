@@ -30,10 +30,12 @@ function displayDogs(happy){
 function dogSearch(){
     $('form').submit(event => {
         event.preventDefault();
-        $('.dogResults').empty();
         let str = document.getElementById("breedOfDog").value;
         let breedOfDog = str.toLowerCase();
         getDogImages(breedOfDog);
+        $('.dogResults').empty();
+        document.getElementById("userForm").reset();
+        
     });
 }
 
